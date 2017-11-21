@@ -1,0 +1,89 @@
+
+D:/w32/Golden Software/Surfer8/sumbar/sumbar_32747.shp
+
+Batas
+Dalam lapis spasial satuan sistem referensi
+xMin,yMin 454779.13,9631380.81 : xMaks,yMaks 814227.96,10103175.33
+Lapis Spasial Sistem Referensi
++proj=utm +zone=47 +south +datum=WGS84 +units=m +no_defs
+
+
+  EXTENT 241384.167930896 9604034.67166928 1029234.34324751 10150643.9018308
+
+    SIZE 259 180
+
+  PROJECTION
+    "proj=utm"
+    "zone=47"
+    "south"
+    "datum=WGS84"
+    "units=m"
+    "no_defs"
+  END # PROJECTION	
+
+  LAYER
+    CONNECTION "admin00.shp"
+    CONNECTIONTYPE OGR
+    METADATA
+      "DESCRIPTION" "Dunia"
+	  "coordsys_name"	"Longitude-Latitude / WGS 84"
+    END # METADATA
+    NAME "admin00"
+    PROJECTION
+      "proj=longlat"
+      "datum=WGS84"
+      "no_defs"
+    END # PROJECTION
+    STATUS ON
+    TEMPLATE "query.html"
+    TILEITEM "location"
+    TYPE POLYGON
+    UNITS METERS
+    CLASS
+      #NAME "Class (0)"
+      STYLE
+        COLOR 255 209 187
+        OUTLINECOLOR 0 0 0
+        PATTERN
+         1.00 2.00
+        END # PATTERN
+        SIZE 8
+        SYMBOL "Dot-1"
+      END # STYLE
+      TEMPLATE "query.html"
+    END # CLASS
+  END # LAYER
+
+  LAYER
+    CONNECTION "sumbar_32747.shp"
+    CONNECTIONTYPE OGR
+    METADATA
+	  "DESCRIPTION" "Sumatera Barat"
+      "coordsys_name"	"WGS 84 / UTM zone 47S"
+    END # METADATA
+    NAME "sumbar_32747"
+    PROJECTION
+      "proj=utm"
+      "zone=47"
+      "south"
+      "datum=WGS84"
+      "units=m"
+      "no_defs"
+    END # PROJECTION
+    STATUS ON
+    TEMPLATE "query.html"
+    TILEITEM "location"
+    TYPE POLYGON
+    UNITS METERS
+    CLASS
+      #NAME "Class (0)"
+      STYLE
+        COLOR 255 255 255
+        OUTLINECOLOR 0 0 0
+        SIZE 8
+      END # STYLE
+      TEMPLATE "query.html"
+    END # CLASS
+  END # LAYER
+	
+  
